@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 11
+          distribution: 'adopt'
       - name: Build with Maven
         run: mvn -B clean verify
 
@@ -31,3 +32,4 @@ jobs:
         with:
           name: Html Cucumber Report
           path: target/cucumber-report.html
+

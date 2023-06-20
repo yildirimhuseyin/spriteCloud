@@ -28,7 +28,6 @@ public class ProgressBar_StepDefs {
         expectedPercentage = percentage;
         System.out.println("actualValue = " + actualValue);
         while (!percentage.contains(actualValue)) {
-            System.out.println("actualValue = " + actualValue);
             actualValue = progressBarPage.progressBar.getText();
 
             if (percentage.contains(actualValue)) {
