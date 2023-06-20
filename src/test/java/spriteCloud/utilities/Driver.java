@@ -3,6 +3,7 @@ package spriteCloud.utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -49,6 +50,16 @@ public class Driver {
                 switch statement will determine the case, and open the matching browser
             */
             switch (browserType){
+
+                case "chrome-headless":
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
+                    WebDriverManager.chromedriver().setup();
+                    driverPool.set(new ChromeDriver(options));
+                    driverPool.get().manage().window().maximize();
+                    driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    break;
+
                 case "chrome":
 
                     WebDriverManager.chromedriver().setup();
