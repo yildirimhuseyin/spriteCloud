@@ -54,7 +54,7 @@ public class Driver {
                 case "chrome-headless":
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless");
-                   options.setBinary(System.getProperty("user.dir")+"/drivers/chromedriver");
+                   options.setBinary("/home/runner/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver");
                     driverPool.set(new ChromeDriver(options));
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
