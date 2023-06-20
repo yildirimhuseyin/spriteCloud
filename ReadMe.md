@@ -97,7 +97,8 @@ The `pojo classes` allow us to create reusable and maintainable framework struct
 ### CI/CD implementation
 In my current project I have settled up CI/CD in Jenkins. Since it is not possible to present you Jenkins CI/CD
 I have decided to create CI/CD pipeline in gitHub.
-For this project `Maven.yml` file triggers CI/CD in github when ever new code added to the master branch 
+For this project Normally `Maven.yml` needs to trigger CI/CD in github when ever new code added to the master branch,
+but I got some exception while remote chrome initializing on gitHub CI/CD. And could not find enough a time to figure it out.  
 
 
 
