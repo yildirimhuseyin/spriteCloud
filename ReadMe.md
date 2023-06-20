@@ -5,7 +5,7 @@ Step definitions link these scenarios to the automation code, enabling their exe
 By focusing on clear communication, readability, and maintaining a single source of truth, Cucumber helps teams ensure that software development aligns with business expectations.
 
 ## The spriteCloud project
-The best place to start is to clone or download the spriteCloud  project on Github ([https://github.com/yildirimhuseyin/LeasePlan.git].
+The best place to start is to clone or download the spriteCloud  project on Github ([https://github.com/yildirimhuseyin/spriteCloud.git].
 And reload project to upload necessary dependency
 ## The project directory structure
 The project has build scripts for Maven, and follows the standard directory structure used in most Cucumber BDD projects:
